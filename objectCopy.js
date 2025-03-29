@@ -22,3 +22,8 @@ const newUser = {};
 Object.assign(newUser, user)
 console.log(newUser)
 
+//more
+
+const moreUser = Object.assign({}, user);
+console.log(moreUser)
+
