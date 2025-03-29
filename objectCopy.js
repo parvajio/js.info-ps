@@ -36,10 +36,15 @@ let user1 = {
     }
   };
   
-  let clone = Object.assign({}, user);
+  let clone = Object.assign({}, user1);
   
-  alert( user.sizes === clone.sizes ); // true, same object
+  console.log( user1.sizes === clone.sizes ); // true, same object
   
   // user and clone share sizes
-  user.sizes.width = 60;    // change a property from one place
-  alert(clone.sizes.width); // 60, get the result from the other one
+  user1.sizes.width = 60;    // change a property from one place
+  console.log(clone.sizes.width); // 60, get the result from the other one
+
+//   structuredClone
+
+const newStrcClone = structuredClone(user1)
+console.log(newStrcClone)
