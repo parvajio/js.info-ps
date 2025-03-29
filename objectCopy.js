@@ -15,3 +15,10 @@ console.log(admin)
 admin.name = "Mosharof";
 console.log(admin)
 console.log(user)
+
+// using Object.assign()
+
+const newUser = {};
+Object.assign(newUser, user)
+console.log(newUser)
+
